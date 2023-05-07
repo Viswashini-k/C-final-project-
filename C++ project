@@ -1,0 +1,65 @@
+//weather App
+//viswashini K
+//vivekanandha college of engineering for women's
+//switch case
+//if else
+#include<iostream> 
+using namespace std;
+int main()
+{
+  string id,loc;
+  int option=0;
+  cout<<"\t*weather app*";
+  cout<<"\nEnter your email id:";
+  cin>>id;
+  cout<<"\nEnter your location:";
+  cin>>loc;
+  cout<<"\n4-days forecast";
+  cout<<"\nEnter your option:";
+  cin>>option;
+  switch(option)
+  {
+   case 1:
+   cout<<"Today forecast";
+   break ;
+   case 2:
+   cout<<"Yesterday forecast";
+   break;
+   case 3:
+   cout<<"Tomorrow forecast";
+   break ;
+   case 4:
+   cout<<"week report";
+   break;
+   default:
+   cout<<"unavailable";
+  }
+  int weather;
+  cout<<"\nweather:";
+  cin>>weather;
+  if(weather>36)
+ {
+  cout<<"cloudy";
+ }
+  else if(weather>34)
+  {
+   cout<<"dry";
+  }
+  else if(weather>32)
+  {
+   cout<<"rain";
+  }
+  else if(weather>31)
+  {
+  cout<<"Thunderstorm";
+  }
+  else if(weather>38)
+  {
+  cout<<"heatwaves";
+  }
+  else if(weather>39)
+  {
+  cout<<"temperature";
+  }
+  return 0;
+}
